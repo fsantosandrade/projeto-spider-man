@@ -1,11 +1,6 @@
 @import url(global.css);
 
-main {
-    height: 100vh;
-    background-color: var(--primary-color);
-}
-
-main::before{
+body::before {
     content: "";
     background: var(--primary-color) url(../images/spider-man-background.jpg) center center no-repeat;
     background-size: cover;
@@ -13,6 +8,12 @@ main::before{
     height: 100%;
     position: absolute;
     opacity: .2;
+    transition: opacity .5s ease-in-out, background-image .5s ease-in-out;
+}
+
+main {
+    height: 100vh;
+    background-color: var(--primary-color);
 }
 
 nav{
@@ -43,11 +44,12 @@ nav > a {
     justify-content: space-evenly;
 }
 
-#img1, #img2, #img3 {
+.card {
     border: solid .5rem white;
     width: calc(100% / 3 - 8%);
     height: 70vh;
     position: relative;
+    transition: filter .5s ease-in-out;
 }
 
 .back {
@@ -56,6 +58,7 @@ nav > a {
     object-fit: cover;
     position: absolute;
     opacity: 1;
+    transition: opacity .5s ease-in-out;
 }
 
 .img {
@@ -63,6 +66,7 @@ nav > a {
     height: 100%;
     object-fit: contain;
     position: relative;
+    transition: .5s ease-in-out;
 }
 
 #imagens > a > p {
@@ -114,4 +118,41 @@ nav > a {
     width: 50%;
     height: 2px;
     position: absolute;
+}
+
+/* Hover animation */
+
+.card-hovered > .back {
+    cursor: pointer;
+    opacity: 0;
+    
+}
+
+.card-hovered > .img {
+    transform: scale(1.4);
+    filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, .5));
+}
+
+#spider-1::before {
+       background-image: url(../images/pic-sm-bg-01.jpg); 
+}
+
+#spider-2::before {
+        background-image: url(../images/pic-sm-bg-02.jpg);
+}   
+
+#spider-3::before {
+        background-image: url(../images/pic-sm-bg-03.jpg);
+}
+
+body[id^="spider-"]::before {
+    opacity: 1;
+}
+
+body[id^="spider-"] .card:not(.card-hovered) {
+    filter: grayscale(100%);
+}
+
+.card-hovered > .tittle {
+    bottom: 50%;
 }
