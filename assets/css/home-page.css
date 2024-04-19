@@ -1,0 +1,117 @@
+@import url(global.css);
+
+main {
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+main::before{
+    content: "";
+    background: var(--primary-color) url(../images/spider-man-background.jpg) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .2;
+}
+
+nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+nav > a {
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+#icon {
+    width: 2rem;
+    vertical-align: middle;
+}
+
+#imagens {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#img1, #img2, #img3 {
+    border: solid .5rem white;
+    width: calc(100% / 3 - 8%);
+    height: 70vh;
+    position: relative;
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 1;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+}
+
+#imagens > a > p {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+    bottom: 0; 
+    font-weight: 400;
+}
+
+#sidebar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+#cont-bot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: solid 2px white;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1;
+    transition: transform .1s ease-in-out;
+}
+
+#cont-bot:hover {
+    transform: scale(1.1);
+}
+
+#cont-bot:nth-child(2) {
+    margin: 0 3.75rem;
+}
+
+#side-line {
+    background-color: white;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+}

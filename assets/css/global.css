@@ -1,64 +1,14 @@
 @charset "UTF-8";   
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700;800&display=swap');
+
+:root{
+    --primary-color: #B9001F;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-main {
-    height: 100vh;
-    background-color: rgb(189, 0, 0);
-}
-
-nav{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    padding: 2em 0;
-}
-
-a {
-    padding: 0 15px;
-    text-decoration: none;
-    color: white;
-}
-
-#icon {
-    width: 25px;
-}
-
-#imagens {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    margin: 5em 0;
-}
-
-#img1, #img2, #img3 {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    background: white url(../images/pic-sm-bg-01.jpg) center center no-repeat;
-    background-size: cover;
-    border: solid 6px white;
-    width: 200px;
-    height: 350px;
-}
-
- div > img {
-    max-width: 100%;
-}
-
-div > p {
-    color: white;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-#sidebar > nav > a {
-    border: solid white;
-    width: 20px;
-    border-radius: 50%;
-    text-align: center;
+    font-family: poppins, sans-serif;
 }
