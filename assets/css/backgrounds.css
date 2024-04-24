@@ -1,0 +1,39 @@
+.tobey-1{
+    background: black url(../images/spiderman-tobey/movie-01/background.png) center center no-repeat;
+    background-size: cover;
+}
+
+.tobey-2 {
+    background: black url(../images/spiderman-tobey/movie-02/background.png) center center no-repeat;
+    background-size: cover;
+}
+
+.tobey-3 {
+    background: black url(../images/spiderman-tobey/movie-03/background.png) center center no-repeat;
+    background-size: cover;
+}
+
+.andrew-1 {
+    background: black url(../images/spiderman-andrew/movie-01/background.png) center center no-repeat;
+    background-size: cover;
+}
+
+.andrew-2 {
+    background: black url(../images/spiderman-andrew/movie-02/background.png) center center no-repeat;
+    background-size: cover;
+}
+
+.tom-1 {
+    background: black url(../images/spiderman-tom/movie-01/background.png) center center no-repeat;
+    background-size: cover;
+}
+
+.tom-2 {
+    background: black url(../images/spiderman-tom/movie-02/background.png) center center no-repeat;
+    background-size: cover;
+}
+
+.tom-3 {
+    background: black url(../images/spiderman-tom/movie-03/background.png) center center no-repeat;
+    background-size: cover;
+}

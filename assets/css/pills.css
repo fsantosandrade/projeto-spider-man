@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0 2px;
     margin: 0 10px;
+    margin-bottom: 6px;
 }
 
 .pills > ul > li:first-child {

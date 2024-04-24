@@ -1,6 +1,7 @@
 @import url(global.css);
 @import url(pills.css);
 @import url(navegation.css);
+@import url(backgrounds.css);
 
 body {
     display: flex;
@@ -21,15 +22,12 @@ body {
 main {
     height: 100%;
     width: 100%;
-    padding-left: 30px;
-    background: black url(../images/spiderman-tobey/movie-01/background.png) center center no-repeat;
-    background-size: cover;
-    padding-left: 100px;
+    padding-left: 130px;
 }
 
 #principal > img {
     width: 450px;
-    padding: 4rem 0;
+    padding: 3rem 0;
 }
 
 article {
