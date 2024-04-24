@@ -20,6 +20,7 @@ nav{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    align-items: center;
     padding: 2rem 0;
     position: relative;
 }
@@ -32,7 +33,7 @@ nav > a {
 }
 
 #icon {
-    width: 2rem;
+    width: 2.8rem;
     vertical-align: middle;
 }
 
@@ -112,6 +113,12 @@ nav > a {
 
 #cont-bot:nth-child(2) {
     margin: 0 3.75rem;
+}
+
+.active {
+    background-color: white;
+    color: var(--primary-color);
+    border: solid 2px var(--primary-color);
 }
 
 #side-line {

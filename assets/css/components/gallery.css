@@ -1,0 +1,38 @@
+aside {
+    height: 25vh;
+    margin-top: 3vh;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+}
+
+aside > ul {
+    height: 65%;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+aside > ul > li {
+    margin: 0;
+    display: flex;
+    margin-left: 10px;
+}
+
+aside > ul > li:first-child {
+    margin-left: 0;
+}
+
+aside > ul > li > a {
+    display: flex;
+}
+
+aside > ul > li > a > img {
+    border: solid 2px white;
+    border-radius: 15px;
+}
+
+aside > ul > li > a > video {
+    border: solid 2px white;
+    border-radius: 15px;
+}

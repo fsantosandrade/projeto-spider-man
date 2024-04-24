@@ -1,0 +1,22 @@
+.pills > ul {
+    display: flex;
+    list-style: none;
+}
+
+.pills > ul > li {
+    background-color: rgb(253, 36, 36);
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 2px;
+    margin: 0 10px;
+    margin-bottom: 6px;
+}
+
+.pills > ul > li:first-child {
+    margin-left: 0;
+}
+
+.pills > ul > li:last-child {
+    margin-right: 0;
+}
