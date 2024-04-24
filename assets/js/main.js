@@ -20,3 +20,12 @@ function addEventListenerToCards(){
 }
 
 document.addEventListener("DOMContentLoaded", addEventListenerToCards)
+
+function selectCarroselItem(selected) {
+    const selectedItem = selected.id
+    const carrosel = document.querySelector('.carrosel')
+    const transform = carrosel.style.transform
+    const rotate = transform
+    console.log(transform)
+    
+}

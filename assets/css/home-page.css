@@ -43,14 +43,27 @@ nav > a {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-evenly;
+    perspective: 3000px;
 }
 
 .card {
     border: solid .5rem white;
-    width: calc(100% / 3 - 8%);
+    width: 100%;
     height: 70vh;
-    position: relative;
+    position: absolute;
     transition: filter .5s ease-out;
+}
+
+.card:nth-child(1) {
+    transform: rotateY(0deg) translateZ(50vw);
+}
+
+.card:nth-child(2) {
+    transform: rotateY(120deg) translateZ(50vw);
+}
+
+.card:nth-child(3) {
+    transform: rotateY(240deg) translateZ(50vw);
 }
 
 .back {
@@ -81,15 +94,7 @@ nav > a {
     transition: bottom .5s ease-out;
 }
 
-#sidebar {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-}
-
-#cont-bot {
+.cont-bot {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,18 +112,29 @@ nav > a {
     transition: transform .1s ease-out;
 }
 
-#cont-bot:hover {
+.cont-bot:hover {
     transform: scale(1.1);
 }
 
-#cont-bot:nth-child(2) {
+.cont-bot:nth-child(2) {
     margin: 0 3.75rem;
 }
 
-.active {
+.cont-bot.active {
     background-color: white;
     color: var(--primary-color);
     border: solid 2px var(--primary-color);
+    outline: solid 2px white;
+}
+
+#sidebar {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    bottom: 1.5rem;
+    width: 100%;
 }
 
 #side-line {
@@ -163,4 +179,11 @@ body[id^="spider-"] .card:not(.card-hovered) {
 
 .card-hovered p.tittle {
     bottom: 50%;
+}
+
+.carrosel {
+    display: flex;
+    justify-content: center;
+    width: calc(100vw / 3 - 10%);
+    transform-style: preserve-3d;
 }
