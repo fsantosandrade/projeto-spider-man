@@ -25,7 +25,14 @@ function selectCarroselItem(selected) {
     const selectedItem = selected.id
     const carrosel = document.querySelector('.carrosel')
     const transform = carrosel.style.transform
-    const rotate = transform
-    console.log(transform)
-    
+    const rotate = transform.match(/rotateY\((-?\d+deg)\)/i)
+    const rotacao = -120 * (Number(selectedItem) - 1)
+    const newTransform = transform.replace(rotate[0], `rotateY(${rotacao}deg)`)
+
+    carrosel.style.transform = newTransform  
+
+    const buttonActive = document.querySelector('.active')
+    buttonActive.classList.remove('active')
+
+    selected.classList.add('active')
 }
