@@ -1,4 +1,5 @@
 @import url(global.css);
+@import url(components/arrow-button.css);
 
 body::before {
     content: "";
@@ -116,7 +117,7 @@ nav > a {
     transform: scale(1.1);
 }
 
-.cont-bot:nth-child(2) {
+.cont-bot:nth-child(2), .cont-bot:nth-child(3), .cont-bot:nth-child(4) {
     margin: 0 3.75rem;
 }
 
@@ -127,19 +128,25 @@ nav > a {
     outline: solid 2px white;
 }
 
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 #sidebar {
     position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-top: 3rem;
     bottom: 1.5rem;
-    width: 100%;
+    width: 70%;
 }
 
 #side-line {
     background-color: white;
-    width: 50%;
+    width: 80%;
     height: 2px;
     position: absolute;
 }

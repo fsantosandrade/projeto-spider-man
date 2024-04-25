@@ -1,0 +1,19 @@
+.arrow-left {
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    border-top: solid 10px white;
+    border-left: solid 10px white;
+    transform: rotateZ(-45deg);
+    cursor: pointer;
+}
+
+.arrow-right {
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    border-top: solid 10px white;
+    border-right: solid 10px white;
+    transform: rotateZ(45deg);
+    cursor: pointer;
+}

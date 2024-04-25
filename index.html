@@ -36,18 +36,23 @@
                     </a>
                 </div>
         </section>
-        <section id="sidebar">
-            <div  id="1" class="active cont-bot" onclick="selectCarroselItem(this)">
-                01
-            </div>
-            <div id="2" class="cont-bot" onclick="selectCarroselItem(this)">
-                02
-            </div>
-            <div id="3" class="cont-bot" onclick="selectCarroselItem(this)">
-                03
-            </div>
-            <div id="side-line"></div>
-        </section>
+        <div class="content">
+            <section id="sidebar">
+                <div class="arrow-left" id="3" onclick="clickArrowLeft(this)"></div>
+                <div  id="1" class="active cont-bot" onclick="selectCarroselItem(this)">
+                    01
+                </div>
+                <div id="2" class="cont-bot" onclick="selectCarroselItem(this)">
+                    02
+                </div>
+                <div id="3" class="cont-bot" onclick="selectCarroselItem(this)">
+                    03
+                </div>
+                <div class="arrow-right" id="4" onclick="clickArrowRight(this)"></div>
+                <div id="side-line"></div>
+            
+            </section>
+        </div>
     </main>
     <script src="assets/js/main.js"></script>
 </body>
